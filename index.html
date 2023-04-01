@@ -5,8 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="stle.css">
 </head>
 <body>
+    <nav data-toggled="false" data-transitionable="false">
+        <div id="nav-logo-section" class="nav-section">
+          <a href="#">
+            <i class="fa-solid fa-dumpster-fire"></i>
+          </a>
+        </div>
+        <div id="nav-mobile-section">
+          <div id="nav-link-section" class="nav-section">
+            <a href="#">ABOUT</a>
+            <a href="#">WORK</a>
+          </div>
+          <div id="nav-social-section" class="nav-section">
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/c/Hyperplexed" target="_blank">
+              <i class="fa-brands fa-youtube"></i>
+            </a>    
+            <a href="#">
+              <i class="fa-brands fa-codepen"></i>
+            </a>
+          </div>
+          <div id="nav-contact-section" class="nav-section">
+            <a href="#">GET IN TOUCH</a>
+          </div>
+        </div>
+        <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+          <span>Menu</span>
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+      
+      <div id="loading-screen">
+        <img src="https://assets.codepen.io/751678/loading-animation-base.svg" width="234" alt="base" class="base">
+        <img src="https://assets.codepen.io/751678/loading-animation-wheel.svg" width="241.5" alt="wheel" class="wheel">
+        <div class="hamster">
+            <img src="https://assets.codepen.io/751678/loading-animation-hamster.svg" width="150px" alt="Hamster body" class="hamster-body">
+            <img src="https://assets.codepen.io/751678/loading-animation_leg3.svg" width="87px" alt="back legs" class="back-legs">
+            <img src="https://assets.codepen.io/751678/loading-animation_leg1.svg" alt="leg 1" width="49px" class="leg-1">
+            <img src="https://assets.codepen.io/751678/loading-animation_leg2.svg" alt="leg 2" width="34px" class="leg-2">
+        </div>
+        <div class="bar"></div>
+    </div>
     
+    <div class="content">
+        <p>Pen made with <i class="fa fa-heart heart"></i> by Mario Duarte, for more follow me on:</p>
+        <p class="icons">
+            <span><a href="https://twitter.com/MDesignsuk" target="_blank"><i class="fa fa-twitter"></i></a></span>&nbsp;
+            <span><a href="https://github.com/Mario-Duarte/" target="_blank"><i class="fa fa-github"></i></a></span>&nbsp;
+            <span><a href="https://bitbucket.org/Mario_Duarte/" target="_blank"><i class="fa fa-bitbucket"></i></a></span>&nbsp;
+            <span><a href="https://codepen.io/MarioDesigns/" target="_blank"><i class="fa fa-codepen"></i></a></span>
+        </p>
+    </div>
+      <script src="app.js"></script>
 </body>
 </html>
