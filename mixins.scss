@@ -1,0 +1,42 @@
+@mixin flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@mixin flex-column{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+@mixin flex-start{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+@mixin flex-end{
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+@mixin lg{
+    @media only screen and (max-width:1200px){
+        @content;
+    }
+}
+
+@mixin mlg{
+    @media only screen and (max-width:1028px){
+        @content;
+    }
+}
+@mixin min-md{
+    @media only screen and (min-width:878px) {
+        @content;
+    } 
+}
+@mixin md{
+    @media only screen and (max-width:878px) {
+        @content
+    }
+}
